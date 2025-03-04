@@ -1,0 +1,112 @@
+.bg-about {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+}
+
+.bg-about>div {
+    width: 550px;
+}
+
+.about-me>h1,
+.skill>h1 {
+    font-size: 30px;
+}
+
+.about-me>h4,
+.other>div>h4 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #4B5563;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.other {
+    margin-top: 1.5em;
+}
+
+.other>div {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: .3em;
+}
+
+.other>div>img {
+    margin-right: .8em;
+}
+
+.skill>div {
+    display: flex;
+}
+
+.cardskill {
+    width: 288px;
+    border-radius: 8px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 0 .8em;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background-color: #F9FAFB;
+}
+
+.cardskill>h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: .5em;
+}
+
+@media (max-width: 1024px) {
+    .bg-about {
+        display: block !important;
+        /* padding: 0 15px; */
+        text-align: justify;
+    }
+
+    .bg-about>div {
+        width: 100% !important;
+    }
+
+    .about-me>h1,
+    .skill>h1 {
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
+
+    .about-me>h4,
+    .other>div>h4 {
+        font-size: 16px !important;
+    }
+
+    .skill>div {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 668px) {
+    .bg-about {
+        padding: 15px 25px;
+    }
+
+    .skill>div {
+        display: block !important;
+        padding: 0 .5em;
+        text-align: -webkit-center;
+    }
+
+    .cardskill {
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .skill>div {
+        display: block !important;
+        padding: 0 .5em;
+    }
+}

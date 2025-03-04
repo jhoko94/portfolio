@@ -1,0 +1,81 @@
+.bg-footer {
+    background: linear-gradient(to bottom right, #4169E1, #F8F9FA);
+    align-content: center;
+    padding: 5em 5em;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .bg-footer {
+        padding: 15px;
+    }
+
+    .card-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .card {
+        min-width: 250px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        background-color: #f3f4f6;
+        /* Warna latar belakang */
+        padding: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .card-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 180px !important;
+        height: 100px !important;
+    }
+}
+
+.bg-footer>div>h1 {
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+.bg-footer>div>h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 2em;
+}
+
+.bg-footer>div>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    border-radius: 12px;
+    width: 277px;
+    height: 140px;
+    background: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    align-content: center;
+}
+
+.card>h4 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: .2em;
+}

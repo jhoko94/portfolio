@@ -1,0 +1,110 @@
+.bg-pendidikan {
+    background-color: white;
+    text-align: center;
+    padding: 5em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-pendidikan>div>h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.pendidikan-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    border-radius: 12px;
+    padding: 1.5em 2em;
+    background-color: white;
+}
+
+.icon-pendidikan {
+    margin-right: 1.5em;
+    flex-shrink: 0;
+}
+
+.icon-pendidikan img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Konten Pendidikan */
+.content-pendidikan {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.content-pendidikan h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.content-pendidikan h4 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.color-grey {
+    color: #4B5563;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 1024px) {
+    .bg-pendidikan {
+        padding: 3em 1em;
+    }
+
+    .pendidikan-container {
+        width: 90%;
+        padding: 1.2em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon-pendidikan {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .content-pendidikan {
+        text-align: center;
+    }
+
+    .content-pendidikan h2 {
+        font-size: 20px;
+    }
+
+    .content-pendidikan h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-pendidikan {
+        padding: 1em;
+    }
+
+    .pendidikan-container {
+        width: fit-content;
+        padding: 1em;
+    }
+
+    .icon-pendidikan img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content-pendidikan h2 {
+        font-size: 18px;
+    }
+
+    .content-pendidikan h4 {
+        font-size: 14px;
+    }
+}
