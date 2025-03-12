@@ -11,3 +11,7 @@ body {
 code {
   font-family: "Montserrat", monospace;
 }
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */

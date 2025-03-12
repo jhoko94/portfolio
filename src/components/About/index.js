@@ -11,10 +11,7 @@ const About = () => {
         <section className="bg-about">
             <div className="about-me">
                 <h1>Tentang Saya</h1>
-                <h4>Frontend Developer dengan pengalaman 5+ tahun dalam membangun antarmuka pengguna yang responsif, interaktif, dan
-ramah pengguna. Ahli dalam HTML, CSS, JavaScript, dan framework modern seperti React.js, Vue.js, dan Nuxt.js.
-Berpengalaman dalam kolaborasi dengan tim desain dan backend untuk mengembangkan aplikasi web yang scalable dan
-efisien. Fokus pada kualitas kode, performa, dan pengalaman pengguna.</h4>
+                <h4>Frontend Developer dengan 5+ tahun pengalaman dalam membangun UI responsif dan interaktif. Menguasai HTML, CSS, JavaScript, React.js, Vue.js, dan Nuxt.js. Berfokus pada performa, kualitas kode, dan pengalaman pengguna melalui kolaborasi dengan tim desain dan backend.</h4>
                 <div className="other">
                     <div onClick={() => handleClick("https://maps.app.goo.gl/t1hBU9Q3M3wvERQx6")} style={{ cursor: 'pointer' }}>
                         <img src="image/icon-about-1.png" alt='about-1' width={16} height={16} />

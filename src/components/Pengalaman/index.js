@@ -1,24 +1,56 @@
-// src/components/Projects.js
-import React from 'react';
-import './index.css'
+import React, { useState, useEffect } from 'react';
+import './index.css';
+import Detail from './Detail'
 
 const Pengalaman = () => {
+    const [detail, setDetail] = useState(true);
+    const [visible, setVisible] = useState(true);
+    useEffect(() => {
+        setDetail(false)
+        setVisible(false)
+    }, []);
+    const handleDetail = () => {
+        console.log('tes')
+        if(!detail) {
+            setVisible(true)
+            setTimeout(() => {
+                setDetail(true)
+            }, 500);
+        } else {
+            setDetail(false)
+            setTimeout(() => {
+                setVisible(false)
+            }, 500);
+        }
+
+    }
     return (
         <section className="bg-pengalaman">
             <h1>Pengalaman Kerja</h1>
-            <div className="card-pengalaman">
-                <h3>PT Telkom Indonesia Bandung</h3>
-                <h4>Front End Developer</h4>
-                <h4 className="card-text">Maret 2020 - Sekarang</h4>
-                <p className="card-text">
-                Mengembangkan dan memelihara antarmuka pengguna untuk aplikasi web internal dan eksternal menggunakan React.js,
-Vue.js, dan Nuxt.js, meningkatkan kepuasan pengguna sebesar 30%.
-Berkolaborasi dengan tim desain untuk menerapkan desain UI/UX yang responsif dan modern menggunakan Figma.
-Membangun komponen reusable dan library untuk mempercepat proses pengembangan.
-Mengintegrasikan API dari backend menggunakan Axios dan RESTful API.
-Melakukan testing menggunakan Jest untuk memastikan kualitas kode dan fungsionalitas.
-Berpartisipasi dalam code review dan menerapkan best practices untuk memastikan kode yang bersih dan mudah dipelihara.
-                </p>
+            <div className="content-pengalaman">
+                <div className="card-pengalaman">
+                    <h3>PT Telkom Indonesia Bandung</h3>
+                    <h4>Front End Developer</h4>
+                    <h4 className="card-text">Maret 2020 - Sekarang</h4>
+                    <p className="card-text">
+                    Mengembangkan UI responsif dengan React.js, Vue.js, dan Nuxt.js, berkolaborasi dengan tim desain, mengintegrasikan API, membangun komponen reusable, serta memastikan kualitas kode melalui testing, code review, dan penerapan best practices.
+                    </p>
+                    <div class="studio-button" onClick={handleDetail}>
+                        <div class="studio-button-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                        </div>
+                        <div class="studio-button-label">
+                        Detail Pengalaman
+                        </div>
+                    </div>
+                </div>
+                {visible &&
+                    <div className={`card-detail-pengalaman ${detail ? 'show' : ''}`}>
+                        {detail &&
+                            <Detail />
+                        }
+                    </div>
+                }
             </div>
         </section>
     );

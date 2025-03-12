@@ -1,6 +1,6 @@
 .bg-pendidikan {
     background-color: white;
-    text-align: center;
+    text-align: -webkit-center;
     padding: 5em 2em;
     display: flex;
     flex-direction: column;
