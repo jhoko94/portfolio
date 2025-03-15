@@ -25,19 +25,21 @@ const Detail = () => {
 
     return (
         <section className="slider-container">
-            <div className="slide">
+            <div className="slide flex-wrap">
                 <div className="slide-content">
-                    <h3>{projects[currentIndex].title}</h3>
+                    <h3 className="font-bold">{projects[currentIndex].title}</h3>
                     <p>{projects[currentIndex].desc}</p>
-                    <h4>Teknologi Frontend yang digunakan :</h4>
-                    <div className="slide-content-logo">
-                        {projects[currentIndex].tech_logo.map((logoimg, index) => (
-                            <img key={index} src={`/image/${logoimg}`} alt={logoimg} width={logoimg.includes('jquery') || logoimg.includes('leaflet') || logoimg.includes('next') || logoimg.includes('legion') ? 70 : 25} />
-                        ))}
-                    </div>
                 </div>
                 <div className="slide-image">
                     <img src={projects[currentIndex].image} alt="detailimage" height={150} />
+                </div>
+            </div>
+            <div className="mt-1">
+                <h4>Teknologi Frontend yang digunakan :</h4>
+                <div className="slide-content-logo flex flex-wrap">
+                    {projects[currentIndex].tech_logo.map((logoimg, index) => (
+                        <img key={index} src={`/image/${logoimg}`} alt={logoimg} width={logoimg.includes('jquery') || logoimg.includes('leaflet') || logoimg.includes('next') || logoimg.includes('legion') ? 70 : 25} />
+                    ))}
                 </div>
             </div>
             <div className="navigate-detail-pengalaman">

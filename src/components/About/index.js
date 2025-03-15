@@ -2,6 +2,15 @@ import React from 'react';
 import './index.css'
 
 const About = () => {
+    const arrKeahlian = [
+        {title: 'Vue.js', image: 'icon-vue.png'},
+        {title: 'React.js', image: 'icon-react.png'},
+        {title: 'JavaScript', image: 'icon-javascript.png'},
+        {title: 'HTML', image: 'icon-html.png'},
+        {title: 'CSS', image: 'icon-css.png'},
+        {title: 'Tailwind', image: 'icon-tailwind.png'}
+    ]
+
     // Fungsi untuk menangani klik dan membuka Google Maps
     const handleClick = (url) => {
         window.open(url, "_blank");
@@ -29,35 +38,15 @@ const About = () => {
             </div>
             <div className="skill">
                 <h1>Keahlian</h1>
-                <div>
-                    <div className="cardskill">
-                        <img src="image/icon-vue.png" alt="vue" width={24} height={24} />
-                        <h5>Vue.js</h5>
-                    </div>
-                    <div className="cardskill">
-                        <img src="image/icon-react.png" alt="vue" width={24} height={24} />
-                        <h5>React.js</h5>
-                    </div>
-                </div>
-                <div>
-                    <div className="cardskill">
-                        <img src="image/icon-javascript.png" alt="vue" width={24} height={24} />
-                        <h5>JavaScript</h5>
-                    </div>
-                    <div className="cardskill">
-                        <img src="image/icon-html.png" alt="vue" width={24} height={24} />
-                        <h5>HTML</h5>
-                    </div>
-                </div>
-                <div>
-                    <div className="cardskill">
-                        <img src="image/icon-css.png" alt="vue" width={24} height={24} />
-                        <h5>CSS</h5>
-                    </div>
-                    <div className="cardskill">
-                        <img src="image/icon-tailwind.png" alt="vue" width={24} height={24} />
-                        <h5>Tailwind</h5>
-                    </div>
+                <div className="flex flex-wrap">
+                { 
+                    arrKeahlian.map((x, index) => (
+                        <div className="cardskill" key={index}>
+                            <img src={`image/${x.image}`} alt="vue" width={24} height={24} />
+                            <h5>{x.title}</h5>
+                        </div>
+                    ))          
+                }
                 </div>
             </div>
         </section>

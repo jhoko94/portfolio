@@ -30,12 +30,13 @@
 
 .card-pengalaman:hover {
     .studio-button {
-      max-width: 100%;
+        display: flex;
+        width: 100% !important;
     }
     .studio-button-label {
-      opacity: 1;
-      transform: translateX(0);
-      transition: 0.25s 0.1s ease-in opacity, 0.15s 0.1s cubic-bezier(.175, .885, .32, 1.275) transform;
+        opacity: 1;
+        transform: translateX(0);
+        transition: 0.25s 0.1s ease-in opacity, 0.15s 0.1s cubic-bezier(.175, .885, .32, 1.275) transform;
     }
 }
 
@@ -70,18 +71,18 @@
     align-items: center;
     background: linear-gradient(to bottom right, #4169E1, #F8F9FA);
     color: white;
-    padding: 8px 10px;
+    /* padding: 10px 11px 11px 11px; */
     border-radius: 50px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     transition: 0.35s ease all;
     overflow: hidden;
-    max-width: 22px;
+    width: 22px;
     cursor: pointer;
 }
   
 .studio-button-icon {
     position: relative;
-    top: 1px;
+    right: 11px;
 }
 
 .studio-button-label {
@@ -117,6 +118,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .content-pengalaman {
+        display: block;
+    }
+    
     .bg-pengalaman {
         padding: 3em 1em;
     }

@@ -35,7 +35,7 @@
 
 .bg-header h1 {
     font-size: 2rem;
-    margin-bottom: 0.2em;
+    /* margin-bottom: 0.2em; */
 }
 
 .bg-header h3 {
@@ -47,7 +47,7 @@
 .bg-header h5 {
     font-size: 1rem;
     font-weight: normal;
-    margin: 0.5em 0;
+    /* margin: 0.5em 0; */
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -88,10 +88,10 @@
     }
 
     .bg-header h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .bg-header h5 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }

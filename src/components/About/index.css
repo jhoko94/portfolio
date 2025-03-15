@@ -42,11 +42,11 @@
 }
 
 .cardskill {
-    width: 288px;
+    width: 45%;
     border-radius: 8px;
     margin-right: 1em;
-    margin-bottom: 1em;
-    padding: 0 .8em;
+    margin-bottom: .8em;
+    padding: 1em .8em;
     font-size: 16px;
     font-weight: 600;
     display: flex;
@@ -101,6 +101,7 @@
     .cardskill {
         margin: 0 !important;
         margin-bottom: 10px !important;
+        width: 100%;
     }
 }
 
