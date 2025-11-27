@@ -1,10 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Header from './components/Header/index'
-import About from './components/About/index'
-import Pengalaman from './components/Pengalaman/index'
-import Pendidikan from './components/Pendidikan/index'
-import Footer from './components/Footer/index'
+import Navigation from './components/Navigation/index';
+import Hero from './components/Hero/index';
+import Projects from './components/Projects/index';
+import Experience from './components/Experience/index';
+import Tools from './components/Tools/index';
+import Contact from './components/Contact/index';
+import Footer from './components/Footer/index';
 
 function App() {
     return (
@@ -21,11 +23,13 @@ function App() {
                 </script>
             </Helmet>
             
-            <Header/>
-            <About/>
-            <Pengalaman/>
-            <Pendidikan/>
-            <Footer/>
+            <Navigation />
+            <Hero />
+            <Projects />
+            <Experience />
+            <Tools />
+            <Contact />
+            <Footer />
         </div>
     )
 }

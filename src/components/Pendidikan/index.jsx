@@ -9,7 +9,7 @@ const Projects = () => {
                 <h1>Pendidikan</h1>
                 <div className="pendidikan-container">
                     <div className="icon-pendidikan">
-                        <img src="image/icon_pendidikan.png" alt="pendidikan" width={80} height={80} />
+                        <img src="/image/icon_pendidikan.png" alt="pendidikan" width={80} height={80} />
                     </div>
                     <div className="content-pendidikan">
                         <h2>Sarjana Teknik Informatika</h2>
