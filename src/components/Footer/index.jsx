@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <p>&copy; {new Date().getFullYear()} Joko Priyono. Made with React & Vite</p>
+                    <p>&copy; 2025 Joko Priyono. Made with React & Vite</p>
                 </div>
             </div>
         </footer>

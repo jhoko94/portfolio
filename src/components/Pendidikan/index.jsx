@@ -13,8 +13,8 @@ const Projects = () => {
                     </div>
                     <div className="content-pendidikan">
                         <h2>Sarjana Teknik Informatika</h2>
-                        <h4>Sekolah Tinggi Manajemen Informatika dan Komputer Widya Dharma</h4>
-                        <h4 className="color-grey">Tahun Kelulusan: 2016</h4>
+                        <h4>Sekolah Tinggi Manajemen Informatika dan Komputer Widya Dharma Pontianak</h4>
+                        <h4 className="color-grey">Periode: Januari 2013 - Juli 2016</h4>
                     </div>
                 </div>
             </div>

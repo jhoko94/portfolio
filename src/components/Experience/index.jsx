@@ -4,10 +4,16 @@ import './index.css';
 const Experience = () => {
     const experiences = [
         {
-            company: "PT Telkom Indonesia Bandung",
-            position: "Front End Developer",
-            period: "Maret 2020 - Sekarang",
-            description: "Mengembangkan UI responsif dengan React.js, Vue.js, dan Nuxt.js, berkolaborasi dengan tim desain, mengintegrasikan API, membangun komponen reusable, serta memastikan kualitas kode melalui testing, code review, dan penerapan best practices."
+            company: "PT Telkom Indonesia",
+            position: "Software Engineer / Frontend Developer",
+            period: "Maret 2020 - Maret 2025",
+            description: "Mengintegrasikan internal services dan third-party components menggunakan RESTful API, mengembangkan 10+ aplikasi web dengan React.js, Vue.js, dan Nuxt.js, mengoptimalkan performa aplikasi, implementasi security measures, routine maintenance, API integration menggunakan Node.js, dan testing menggunakan Jest."
+        },
+        {
+            company: "PT Jasamedika Saranatama",
+            position: "Analis Programmer",
+            period: "November 2016 - November 2017",
+            description: "Setting dan installing SQL Server 2008R2, designing dan creating SIMRS programs menggunakan VB6, melakukan database migration dari SQL Server ke Informix, maintaining SIMRS applications, mengembangkan 3+ sistem SIMRS untuk rumah sakit, dan melakukan troubleshooting technical issues."
         }
     ];
 

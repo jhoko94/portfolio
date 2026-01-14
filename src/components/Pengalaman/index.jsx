@@ -29,11 +29,11 @@ const Pengalaman = () => {
             <h1>Pengalaman Kerja</h1>
             <div className="content-pengalaman">
                 <div className="card-pengalaman">
-                    <h3>PT Telkom Indonesia Bandung</h3>
-                    <h4>Front End Developer</h4>
-                    <h4 className="card-text">Maret 2020 - Sekarang</h4>
+                    <h3>PT Telkom Indonesia</h3>
+                    <h4>Software Engineer / Frontend Developer</h4>
+                    <h4 className="card-text">Maret 2020 - Maret 2025</h4>
                     <p className="card-text mb-[10px]">
-                    Mengembangkan UI responsif dengan React.js, Vue.js, dan Nuxt.js, berkolaborasi dengan tim desain, mengintegrasikan API, membangun komponen reusable, serta memastikan kualitas kode melalui testing, code review, dan penerapan best practices.
+                    Mengintegrasikan internal services dan third-party components menggunakan RESTful API, mengembangkan 10+ aplikasi web dengan React.js, Vue.js, dan Nuxt.js, mengoptimalkan performa aplikasi, implementasi security measures, routine maintenance, API integration menggunakan Node.js, dan testing menggunakan Jest.
                     </p>
                     <div class="studio-button py-1 px-4" onClick={handleDetail}>
                         <div class="studio-button-icon">
@@ -43,6 +43,14 @@ const Pengalaman = () => {
                         Detail Pengalaman
                         </div>
                     </div>
+                </div>
+                <div className="card-pengalaman">
+                    <h3>PT Jasamedika Saranatama</h3>
+                    <h4>Analis Programmer</h4>
+                    <h4 className="card-text">November 2016 - November 2017</h4>
+                    <p className="card-text mb-[10px]">
+                    Setting dan installing SQL Server 2008R2, designing dan creating SIMRS programs menggunakan VB6, melakukan database migration dari SQL Server ke Informix, maintaining SIMRS applications, mengembangkan 3+ sistem SIMRS untuk rumah sakit, dan melakukan troubleshooting technical issues.
+                    </p>
                 </div>
                 {visible &&
                     <div className={`card-detail-pengalaman ${detail ? 'show' : ''}`}>

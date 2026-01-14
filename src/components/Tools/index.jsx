@@ -5,9 +5,15 @@ const Tools = () => {
     const tools = [
         { name: 'React.js', icon: 'icon-react.png' },
         { name: 'Vue.js', icon: 'icon-vue.png' },
+        { name: 'Nuxt.js', icon: 'logo-nuxt.svg' },
+        { name: 'Next.js', icon: 'logo-nextjs.svg' },
+        { name: 'Node.js', icon: 'icon-javascript.png' },
         { name: 'JavaScript', icon: 'icon-javascript.png' },
         { name: 'HTML', icon: 'icon-html.png' },
         { name: 'CSS', icon: 'icon-css.png' },
+        { name: 'PostgreSQL', icon: 'icon-css.png' },
+        { name: 'SQL Server', icon: 'icon-css.png' },
+        { name: 'Git', icon: 'logo-gitlab.svg' },
         { name: 'Tailwind CSS', icon: 'icon-tailwind.png' }
     ];
 

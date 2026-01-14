@@ -15,15 +15,16 @@ const Hero = () => {
                     </div>
                     <div className="hero-text">
                         <h1 className="hero-name">Joko Priyono</h1>
-                        <h2 className="hero-title">FRONTEND DEVELOPER</h2>
+                        <h2 className="hero-title">SOFTWARE ENGINEER</h2>
                         <p className="hero-description">
-                            Frontend Developer dengan 5+ tahun pengalaman dalam membangun UI responsif dan interaktif. 
-                            Menguasai HTML, CSS, JavaScript, React.js, Vue.js, dan Nuxt.js. Berfokus pada performa, 
-                            kualitas kode, dan pengalaman pengguna melalui kolaborasi dengan tim desain dan backend.
+                            Software Engineer dengan 5+ tahun pengalaman dalam pengembangan aplikasi software dan web full-stack. 
+                            Berpengalaman dalam pengelolaan database (SQL Server, PostgreSQL), database migration, serta pengembangan 
+                            aplikasi menggunakan React.js, Vue.js, dan Node.js. Terbiasa dengan integrasi berbagai internal services 
+                            dan third-party components, implementasi RESTful API, Git workflow, testing & debugging, dan security best practices.
                         </p>
                         <div className="hero-skills">
-                            <span className="skill-tag">RESPONSIVE DESIGN</span>
-                            <span className="skill-tag">REACT, VUE, NUXT</span>
+                            <span className="skill-tag">FULL-STACK DEVELOPMENT</span>
+                            <span className="skill-tag">REACT, VUE, NODE.JS</span>
                         </div>
                         <div className="hero-contact">
                             <button 

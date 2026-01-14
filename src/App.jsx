@@ -5,7 +5,6 @@ import Hero from './components/Hero/index';
 import Projects from './components/Projects/index';
 import Experience from './components/Experience/index';
 import Tools from './components/Tools/index';
-import Contact from './components/Contact/index';
 import Footer from './components/Footer/index';
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
             <Projects />
             <Experience />
             <Tools />
-            <Contact />
             <Footer />
         </div>
     )
