@@ -4,12 +4,12 @@ import './index.css';
 const Navigation = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
             
-            // Update active section based on scroll position
             const sections = ['home', 'projects', 'experience', 'tools'];
             const current = sections.find(section => {
                 const element = document.getElementById(section);
@@ -31,6 +31,11 @@ const Navigation = () => {
         if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+        setIsMenuOpen(false);
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
     };
 
     const navItems = [
@@ -46,7 +51,16 @@ const Navigation = () => {
                 <div className="nav-logo" onClick={() => scrollToSection('home')}>
                     Joko Priyono
                 </div>
-                <ul className="nav-menu">
+                <button 
+                    className={`burger-menu ${isMenuOpen ? 'active' : ''}`}
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                     {navItems.map(item => (
                         <li key={item.id}>
                             <a

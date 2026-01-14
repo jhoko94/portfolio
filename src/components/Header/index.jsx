@@ -2,7 +2,6 @@ import React from 'react';
 import './index.css'
 
 const Header = () => {
-    // Fungsi untuk menangani klik
     const handleClick = (url) => {
         window.open(url, "_blank");
     };

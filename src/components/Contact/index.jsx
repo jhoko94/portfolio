@@ -18,7 +18,6 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission
         const mailtoLink = `mailto:jhoko94@gmail.com?subject=Contact from Portfolio&body=Name: ${formData.name}%0AEmail: ${formData.email}%0ABudget: ${formData.budget}%0AMessage: ${formData.message}`;
         window.location.href = mailtoLink;
         setFormData({ name: '', email: '', budget: '', message: '' });

@@ -35,7 +35,6 @@
 
 .bg-header h1 {
     font-size: 2rem;
-    /* margin-bottom: 0.2em; */
 }
 
 .bg-header h3 {
@@ -47,7 +46,6 @@
 .bg-header h5 {
     font-size: 1rem;
     font-weight: normal;
-    /* margin: 0.5em 0; */
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -56,7 +54,6 @@
     color: #FFD700;
 }
 
-/* Tablet (≤ 768px) */
 @media (min-width: 600px) {
     .bg-header {
         flex-direction: row;
@@ -76,7 +73,6 @@
     }
 }
 
-/* Desktop (≥ 1024px) */
 @media (min-width: 1024px) {
     .avatar {
         width: 250px;

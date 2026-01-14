@@ -63,7 +63,6 @@
 @media (max-width: 1024px) {
     .bg-about {
         display: block !important;
-        /* padding: 0 15px; */
         text-align: justify;
     }
 
@@ -89,25 +88,79 @@
 
 @media (max-width: 668px) {
     .bg-about {
-        padding: 15px 25px;
+        padding: 2rem 1.5rem;
+    }
+    
+    .about-me>h4 {
+        font-size: 16px !important;
+        line-height: 1.6;
+    }
+    
+    .other>div {
+        margin-bottom: 0.5em;
+    }
+    
+    .other>div>h4 {
+        font-size: 14px !important;
     }
 
     .skill>div {
         display: block !important;
-        padding: 0 .5em;
+        padding: 0;
         text-align: -webkit-center;
     }
 
     .cardskill {
-        margin: 0 !important;
-        margin-bottom: 10px !important;
+        margin: 0 auto 10px auto !important;
         width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-about {
+        padding: 1.5rem 1rem;
+    }
+    
+    .about-me>h1,
+    .skill>h1 {
+        font-size: 24px !important;
+    }
+    
+    .about-me>h4 {
+        font-size: 14px !important;
+    }
+    
+    .other>div>h4 {
+        font-size: 13px !important;
+    }
+    
+    .cardskill {
+        padding: 0.8em 0.6em;
+        font-size: 14px;
+    }
+    
+    .cardskill>h5 {
+        font-size: 14px;
     }
 }
 
 @media (max-width: 360px) {
-    .skill>div {
-        display: block !important;
-        padding: 0 .5em;
+    .bg-about {
+        padding: 1rem 0.75rem;
+    }
+    
+    .about-me>h1,
+    .skill>h1 {
+        font-size: 20px !important;
+    }
+    
+    .about-me>h4 {
+        font-size: 13px !important;
+    }
+    
+    .cardskill {
+        padding: 0.7em 0.5em;
+        font-size: 13px;
     }
 }

@@ -68,6 +68,12 @@
 @media (max-width: 768px) {
     .tools-section {
         padding: 4rem 1rem;
+        min-height: auto;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
     
     .tools-grid {
@@ -77,6 +83,56 @@
     
     .tool-card {
         padding: 2rem 1.5rem;
+    }
+    
+    .tool-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1rem;
+    }
+    
+    .tool-icon img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .tool-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tools-section {
+        padding: 3rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .tool-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .tool-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0.75rem;
+    }
+    
+    .tool-icon img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .tool-name {
+        font-size: 0.9rem;
     }
 }
 

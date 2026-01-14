@@ -148,6 +148,20 @@
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.contact-text {
+    display: inline;
 }
 
 .contact-btn:hover {
@@ -170,6 +184,7 @@
 @media (max-width: 768px) {
     .hero-section {
         padding: 100px 1rem 2rem;
+        min-height: auto;
     }
     
     .hero-content {
@@ -181,6 +196,11 @@
     .hero-avatar img {
         width: 200px;
         height: 200px;
+        border: 6px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .hero-text {
+        min-width: auto;
     }
     
     .hero-name {
@@ -189,6 +209,48 @@
     
     .hero-title {
         font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-skills {
+        justify-content: center;
+        gap: 0.75rem;
+        margin: 1.5rem 0;
+    }
+    
+    .skill-tag {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .hero-contact {
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .contact-btn {
+        padding: 0.75rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        min-width: 50px;
+    }
+    
+    .contact-icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .contact-text {
+        display: none;
     }
     
     .hero-stats {
@@ -201,3 +263,66 @@
     }
 }
 
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 80px 1rem 1.5rem;
+    }
+    
+    .hero-avatar img {
+        width: 150px;
+        height: 150px;
+        border: 4px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .hero-name {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-skills {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .skill-tag {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+    
+    .hero-contact {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .contact-btn {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border-radius: 50%;
+        min-width: 50px;
+    }
+    
+    .contact-icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .contact-text {
+        display: none;
+    }
+}

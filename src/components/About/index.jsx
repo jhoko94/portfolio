@@ -17,7 +17,6 @@ const About = () => {
         {title: 'Tailwind', image: 'icon-tailwind.png'}
     ]
 
-    // Fungsi untuk menangani klik dan membuka Google Maps
     const handleClick = (url) => {
         window.open(url, "_blank");
     };
